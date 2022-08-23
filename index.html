@@ -19,12 +19,14 @@
     <!-- header area start -->
     <header class="d-flex justify-content-center bg-dark h-75">
         <div class="align-self-center">
-            <div class="text-center ">
-                <h1 class="text-white display-1">Bangladesh &nbsp; Playing &nbsp; XI &nbsp;<br> in &nbsp; Asia Cup</h1>
-                <p class="text-white fs-4 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+            <div class="text-center text-break w-75 m-auto">
+                <h1 class="display-1 text-success">Bangladesh &nbsp; Playing &nbsp; XI &nbsp; in &nbsp; Asia
+                    Cup</h1>
+                <p class="text-white fs-4 ">Amet minim mollit non deserunt ullamco est sit aliqua dolor
+                    do
                     amet
                     sint. Velit
-                    officia consequat duis enim velit mollit.<br> Exercitation veniam consequat sunt
+                    officia consequat duis enim velit mollit. Exercitation veniam consequat sunt
                     nostrud amet.</p>
             </div>
         </div>
@@ -216,13 +218,29 @@
                         <label class="fw-bold">Par-Player ($):</label>
                         <input type="number" class="fw-bold form-control" id="inputFild">
                     </div>
-                    <div class="text-center">
-                        <button type="button" id="btn_total_expense"
-                            class="btn btn-success px-5 py-2 mb-3 fw-bold">Calculate</button><br>
-                        <span class="fs-5 text-muted">Player Expenses: </span>
+                    <div>
+                        <div class="text-center">
+                            <button type="button" id="btn_total_expense"
+                                class="btn btn-success px-5 py-2 mb-3 fw-bold">Calculate</button><br>
+                        </div>
+                        <span class="fs-5 ms-3 fw-bold text-muted">Players Expense: </span>
                         <span class="fs-5">$</span>
                         <span id="p_expenses"></span>
                     </div>
+                    <div class="m-4">
+                        <label id="manager" class="fw-bold">Manager ($): </label>
+                        <input type="number" class="fw-bold form-control" id="managerInputFild">
+                    </div>
+                    <div class="m-4">
+                        <label id="coach" class="fw-bold">Coach ($): </label>
+                        <input type="number" class="fw-bold form-control" id="coatchInputFild">
+                    </div>
+                    <div class="text-center">
+                        <button type="button" id="btn_total_cost"
+                            class="btn btn-success px-4 py-2 mb-3 fw-bold">Calculate Total</button><br>
+                    </div>
+                    <h1 class="fs-1 ms-3 fw-bold text-light"> Total: $<span id="t_expenses"
+                            class="text-danger">00</span></h1>
                 </div>
             </div>
         </div>

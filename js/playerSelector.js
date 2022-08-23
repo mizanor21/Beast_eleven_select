@@ -116,9 +116,31 @@ function countItems(playerList) {
 
 }
 
+// Players Expenses area 
 const txt = document.getElementById('inputFild');
 const out = document.getElementById('p_expenses');
 
 document.getElementById('btn_total_expense').addEventListener('click', function () {
     out.innerHTML = txt.value * 11;
+})
+
+//Total cost area 
+
+document.getElementById('btn_total_cost').addEventListener('click', function () {
+    const playerField = document.getElementById('inputFild');
+    const perPlayerAmount = parseFloat(playerField.value);
+    const playersAmount = perPlayerAmount * 11;
+
+    const managerField = document.getElementById('managerInputFild');
+    const managerAmount = parseFloat(managerField.value);
+    const coachField = document.getElementById('coatchInputFild');
+    const coachAmount = parseFloat(coachField.value);
+
+    const totalElement = document.getElementById('t_expenses');
+    const total = playersAmount + managerAmount + coachAmount;
+    totalElement.innerText = total;
+
+    // managerField.value = '';
+    // coachField.value = '';
+
 })
