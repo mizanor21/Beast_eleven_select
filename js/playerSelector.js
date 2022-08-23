@@ -105,4 +105,20 @@ document.getElementById('btn_taskin').addEventListener('click', function () {
     playerList.appendChild(li);
     document.getElementById('btn_taskin').setAttribute("disabled", "");
 })
-// Player List End 
+// Player List End
+
+// Count Player Added
+function countItems(playerList) {
+    var ol = document.getElementById(playerList);
+    var i = 0, itemCount = 0;
+    while (ol.getElementsByTagName('li')[i++]) itemCount++;
+    document.write(itemCount);
+
+}
+
+const txt = document.getElementById('inputFild');
+const out = document.getElementById('p_expenses');
+
+document.getElementById('btn_total_expense').addEventListener('click', function () {
+    out.innerHTML = txt.value * 11;
+})

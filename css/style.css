@@ -1,12 +1,12 @@
 header h1 {
     font-family: 'Cinzel', serif;
     font-family: 'Monoton', cursive;
-    padding-top: 250px;
+    /* padding-top: 250px; */
 }
 
-header p {
+/* header p {
     padding-bottom: 250px;
-}
+} */
 
 .side_bar {
     width: 300px;
@@ -16,6 +16,10 @@ header p {
     font-size: x-large;
     font-weight: 500;
 }
+
+/* #p_expenses {
+    padding: 0px;
+} */
 
 .container .row {
     width: 80%;
