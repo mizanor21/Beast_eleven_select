@@ -4,10 +4,6 @@ header h1 {
     /* padding-top: 250px; */
 }
 
-/* header p {
-    padding-bottom: 250px;
-} */
-
 .side_bar {
     width: 300px;
     height: 800px;
@@ -16,10 +12,6 @@ header h1 {
     font-size: x-large;
     font-weight: 500;
 }
-
-/* #p_expenses {
-    padding: 0px;
-} */
 
 .container .row {
     width: 80%;
