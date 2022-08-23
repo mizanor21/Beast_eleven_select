@@ -122,6 +122,12 @@ document.getElementById('btn_taskin').addEventListener('click', function () {
 })
 // Player List End
 
+//Players items remove
+const item_container = document.getElementById('playerList').addEventListener('click', function (event) {
+    event.target.parentNode.removeChild(event.target);
+    document.getElementById('playerList').removeAttribute('disabled');
+})
+
 // Players Expenses area 
 const txt = document.getElementById('inputFild');
 const out = document.getElementById('p_expenses');
